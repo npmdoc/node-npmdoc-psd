@@ -1,0 +1,16 @@
+<svg height="206" width="720" xmlns="http://www.w3.org/2000/svg">
+<rect height="206" fill="#555" width="720"></rect>
+<text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
+<tspan x="10" y="26">3 megabytes</tspan>
+<tspan x="10" y="42">└─┬ psd@3.1.0 </tspan>
+<tspan x="10" y="58">  ├─┬ coffee-script@1.7.1 </tspan>
+<tspan x="10" y="74">  │ └── mkdirp@0.3.5 </tspan>
+<tspan x="10" y="90">  ├── coffeescript-module@0.2.1 </tspan>
+<tspan x="10" y="106">  ├── iconv-lite@0.4.15 </tspan>
+<tspan x="10" y="122">  ├── jspack@0.0.4 </tspan>
+<tspan x="10" y="138">  ├── lodash@2.4.2 </tspan>
+<tspan x="10" y="154">  ├── parse-engine-data@0.1.2 </tspan>
+<tspan x="10" y="170">  ├── pngjs@0.4.0 </tspan>
+<tspan x="10" y="186">  └── rsvp@3.0.21</tspan>
+</text>
+</svg>
