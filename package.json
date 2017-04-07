@@ -1,17 +1,40 @@
 {
-    "buildNpmdoc":"psd",
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "buildNpmdoc": "psd",
+    "description": "api documentation for [psd (v3.1.0)](https://github.com/meltingice/psd.js) [![npm package](https://img.shields.io/npm/v/npmdoc-psd.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-psd) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-psd.svg)](https://travis-ci.org/npmdoc/node-npmdoc-psd)",
     "devDependencies": {
-        "psd": "*",
         "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "psd": "*",
         "utility2": "kaizhu256/node-utility2#alpha"
     },
-    "name":"npmdoc-psd",
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmdoc/node-npmdoc-psd",
+    "keywords": [
+        "documentation",
+        "psd"
+    ],
+    "license": "MIT",
+    "main": "lib.npmdoc_psd.js",
+    "name": "npmdoc-psd",
+    "nameAlias": "npmdoc_psd",
+    "nameOriginal": "npmdoc-psd",
+    "os": [
+        "darwin",
+        "linux"
+    ],
     "repository": {
         "type": "git",
         "url": "https://github.com/npmdoc/node-npmdoc-psd"
     },
     "scripts": {
-        "build-ci": "utility2 shReadmeTest build_ci.sh"
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "(set -e; npm install \"kaizhu256/node-utility2#alpha\"; utility2 shDeployHeroku)",
+        "postinstall": "if [ -f npm_scripts.sh ]; then ./npm_scripts.sh postinstall; fi",
+        "start": "(set -e; export PORT=${PORT:-8080}; utility2 start test.js)",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
     },
     "version": "0.0.1"
 }
