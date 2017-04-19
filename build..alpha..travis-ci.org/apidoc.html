@@ -63,6 +63,15 @@
 
         <li>
 
+            <a class="apidocElementLiA" href="#apidoc.element.psd.psd">
+            function <span class="apidocSignatureSpan"></span>psd
+            <span class="apidocSignatureSpan">(data)</span>
+            </a>
+
+        </li>
+
+        <li>
+
             <a class="apidocElementLiA" href="#apidoc.element.psd.Node.Root">
             function <span class="apidocSignatureSpan">psd.</span>Node.Root
             <span class="apidocSignatureSpan">(psd)</span>
@@ -340,6 +349,31 @@
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.psd" id="apidoc.module.psd">module psd</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.psd.psd" id="apidoc.element.psd.psd">
+        function <span class="apidocSignatureSpan"></span>psd
+        <span class="apidocSignatureSpan">(data)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function PSD(data) {
+  this.file = new File(data);
+  this.parsed = false;
+  this.header = null;
+  Object.defineProperty(this, &#x27;layers&#x27;, {
+    get: function() {
+      return this.layerMask.layers;
+    }
+  });
+  RSVP.on(&#x27;error&#x27;, function(reason) {
+    return console.error(reason);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
 
 
     <h2>
